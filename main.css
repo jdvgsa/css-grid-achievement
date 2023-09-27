@@ -2,19 +2,19 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: rgba(242, 247, 242, 0.979);    
+  background-color: rgba(242, 247, 242, 0.993);    
 
 }
 
 article {
   width: 100%;
   height: 100%;
-  /* border: 50px; */
   border-style: solid;
+  
 }
 
 article:nth-child(even) {
-  background-color: rgba(10, 0, 0, 0.938);
+  background-color: rgba(10, 0, 0, 0.993);
   grid-auto-rows: row;
 }
 
@@ -23,38 +23,30 @@ article:nth-child(even) {
   /* text-decoration: line-through;} */
 
   article:nth-child(odd) {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.897);
     /* grid-auto-rows: row; */
+    /* unsure about auto rows */
   }
 
 
 section {
-      width: 80vh;
-      height: 80vh;
+  display: grid;
+
+      width: 85vh;
+      height: 85vh;
       
       margin: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+      grid-template-columns: repeat(7, 1fr);
       
       justify-content: center;
       align-items: center;
     }
     
       /* grid-template-rows: repeat(8, 1fr); */
+      /* template rows make no difference??? */
 
 
     
-    /* center the box and make it visible */
+    
 
-
-      
-            /* center the content of the box */
-            /* don't want the content centered? set display to block (justify-content and align items don't do anything on a block container) */
-/* .grid {
- 
-  display: grid;
-  grid-template-columns: 50px;
-  grid-template-rows: 50px;
-  /* grid-auto-rows: ;
-  grid-auto-columns: ; 
-}*/
